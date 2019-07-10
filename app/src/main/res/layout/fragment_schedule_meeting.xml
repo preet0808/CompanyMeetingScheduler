@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".fragments.ScheduleMeetingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/date"
+        style="@style/corner_textview"/>
+
+    <TextView
+
+        android:id="@+id/start_time"
+       style="@style/corner_textview"/>
+
+    <TextView
+
+        android:id="@+id/end_time"
+        style="@style/corner_textview"/>
+
+    <com.companymeetingscheduler.com.customfonts.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="SUBMIT"
+        android:textSize="14dp"
+        android:id="@+id/submit"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ScheduledMeetingsFragment">
+
+    <LinearLayout
+android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/header_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.companymeetingscheduler.com.customfonts.MyTextView
+            android:text="Date"
+            android:layout_weight="1"
+            style="@style/listview_item_textview"
+             />
+
+        <com.companymeetingscheduler.com.customfonts.MyTextView
+            style="@style/listview_item_textview"
+            android:id="@+id/selected_date"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/master_header"
+        android:layout_below="@+id/header_ll"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.companymeetingscheduler.com.customfonts.MyTextView
+            android:layout_weight="1"
+            android:text="Start time"
+            style="@style/listview_item_textview"
+            android:textColor="@color/white"/>
+
+
+
+        <com.companymeetingscheduler.com.customfonts.MyTextView
+            android:layout_weight="1"
+            android:text="End time"
+            style="@style/listview_item_textview"
+            android:textColor="@color/white"/>
+
+        <com.companymeetingscheduler.com.customfonts.MyTextView
+            android:layout_weight="1"
+            android:text="Description"
+            style="@style/listview_item_textview"
+            android:textColor="@color/white"/>
+
+        <com.companymeetingscheduler.com.customfonts.MyTextView
+            android:layout_weight="1"
+            android:text="Participants"
+            style="@style/listview_item_textview"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+   <ListView
+       android:layout_below="@+id/master_header"
+       android:padding="5dp"
+       android:id="@+id/listview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+   <android.support.design.widget.FloatingActionButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:fabSize="normal"
+      android:backgroundTint="@color/colorPrimary"
+       android:id="@+id/prev"
+       android:src="@drawable/back"
+       android:layout_alignParentLeft="true"
+       android:layout_margin="20dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:id="@+id/next"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/forward"
+android:layout_alignParentRight="true"
+        android:layout_margin="20dp"/>
+    </RelativeLayout>
+</RelativeLayout>

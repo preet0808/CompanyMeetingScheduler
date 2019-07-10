@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:id="@+id/menu_rl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingLeft="10dp"
+       android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/add_iv"
+            android:src="@drawable/add"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+
+        <FrameLayout
+android:layout_below="@+id/menu_rl"
+            android:id="@+id/mFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:elevation="5dp"
+                android:visibility="gone"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/toast_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/corner_black_solid"
+                android:text=""
+                android:gravity="center"
+                android:textSize="13dp"
+                android:textColor="@color/white"
+                android:padding="20dp" />
+
+        </FrameLayout>
+
+</RelativeLayout>
